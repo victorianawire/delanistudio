@@ -1,33 +1,33 @@
 $(document).ready(function() {
     $("#development-image").click(function() {
-        $("#development-image").slideDown('1200').hide('1000');
-        $("#development").show('1200');
+        $("#design-image").slideDown('1000').hide('1000');
+        $("#design").show('1000');
     });
     $("#development").click(function() {
-        $("#development").slideUp('1200');
-        $("#development-image").slideDown('1200');
+        $("#design").slideUp('1000');
+        $("#development-image").slideDown('1500');
     });
 });
 
 $(document).ready(function() {
     $("#design-image").click(function() {
-        $("#design-image").slideDown('1500').hide('1000');
-        $("#design").show('1500');
+        $("#design-image").slideDown('1000').hide('1000');
+        $("#design").show('1000');
     });
     $("#design").click(function() {
-        $("#design").slideUp('1500');
-        $("#design-image").slideDown('1500');
+        $("#design").slideUp('1000');
+        $("#design-image").slideDown('1000');
     });
 });
 
 $(document).ready(function() {
     $("#product-image").click(function() {
-        $("#product-image").slideDown('1500').hide('1000');
-        $("#product").show('1500');
+        $("#product-image").slideDown('1000').hide('1000');
+        $("#product").show('1000');
     });
     $("#product").click(function() {
-        $("#product").slideUp('1500');
-        $("#product-image").slideDown('1500');
+        $("#product").slideUp('1000');
+        $("#product-image").slideDown('100');
     });
 });
 
@@ -85,7 +85,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $("form#form34A").submit(function(event) {
-        // event.preventDefault();
+
         var name = $("input#MERGE1").val();
         var email = $("input#MERGE0").val();
         var message = $("textarea#comment").val();
