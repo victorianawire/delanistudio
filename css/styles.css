@@ -70,7 +70,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Copse', serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
 }
 
@@ -220,7 +220,7 @@ footer p {
     text-align: center;
     font-size: 30px;
     padding-top: 50%;
-    font-family: 'Delius Swash Caps', cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 @media only screen and (max-width: 755px) {
