@@ -1,38 +1,34 @@
-.landing {
-    background-image: url('../assets/backgrounds/h_img.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    padding-top: 17%;
+/*styling the body element of the webpage*/
+
+body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.landing h1 {
-    padding: 2px;
-    margin: 5px;
-}
 
-.landing p {
-    padding: 2px;
+/*styling of the home-container div element*/
+
+#home-container {
+    background-image: url(../img/backgrounds/h_img.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: white;
 }
 
 #logo {
-    margin-top: 12px;
-    margin-bottom: 24px;
-    width: 70px;
-    height: 70px;
-    ;
+    padding-top: 10rem;
+}
+
+#welcome-title {
+    padding-top: 5rem;
 }
 
 #mouse-click {
     padding-top: 24px;
-    margin-top: 10%;
     padding-bottom: 40px;
-}
-
-#mouse-click {
+    margin-top: 15%;
     animation: bounce 2s infinite;
 }
 
@@ -52,370 +48,231 @@
     }
 }
 
-.about {
+#about-us-container {
     text-align: center;
-    padding-bottom: 30px;
-    padding-top: 40px;
-    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
 }
 
-#about {
-    font-family: 'Times New Roman', Times, serif;
+#about-us-header {
+    padding-top: 2rem;
 }
 
-.services {
-    text-align: center;
-    background-image: url("../assets/backgrounds/s_image.jpg");
-    color: white;
-    background-position: center;
-    background-size: cover;
+#about-us-description {
+    padding-bottom: 2rem;
+    line-height: 3rem;
+}
+
+#service-container {
+    background-image: url(../img/backgrounds/s_image.jpg);
+    background-attachment: scroll;
     background-repeat: no-repeat;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 55px;
-    margin-left: 55px;
-}
-
-.services h2 {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#servicesoverlay {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
-
-.what-we-do {
-    font-family: 'Quattrocento', serif;
+    background-size: cover;
     text-align: center;
-    padding-top: 40px;
-    font-family: 'Gabriela', serif;
+    color: white;
 }
 
-.what-we-do .headings {
-    padding-bottom: 38px;
+#service-header {
+    padding-top: 6rem;
 }
 
-#portfolio {
+#service-description {
+    padding-bottom: 6rem;
+    line-height: 3rem;
+}
+
+#whatwedo-header {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#what-we-do {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-left: 18%;
-    margin-right: 16%;
+    flex-direction: row;
+    justify-items: stretch;
+    justify-content: space-between;
+    padding-top: 2rem;
 }
 
-.col-md-3 img {
+.clickable-images {
+    cursor: pointer;
+}
+
+.hidden-description {
+    display: none;
+}
+
+#design-icon {
+    text-align: center;
+}
+
+#development-icon {
+    text-align: center;
+}
+
+#product-icon {
+    text-align: center;
+}
+
+#design-icon-description {
+    text-align: center;
+    width: 25%;
+}
+
+#development-icon-description {
+    text-align: center;
+    width: 25%;
+}
+
+#product-icon-description {
+    text-align: center;
+    width: 25%;
+}
+
+#portfolio-header {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.image-size {
     max-width: 100%;
     max-height: 100%;
+    padding-bottom: 2rem;
 }
 
-.portfolio h2 {
+#bottom-row-projects {
+    padding-bottom: 2rem;
+}
+
+#project-one-title {
     text-align: center;
-    padding-top: 40px;
-    font-family: 'Times New Roman', Times, serif, serif;
-}
-
-.mc_embed_signup {
-    background-image: url("https://github.com/victorianawire/delanistudio/blob/master/assets/backgrounds/c_image.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-}
-
-.title {
-    padding: 6px;
-}
-
-.contact h2 {
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    font-family: 'Gabriela', serif;
-}
-
-input[type=text],
-input[type=email],
-#comment {
-    background: transparent;
-    color: white;
-    font-size: 20px;
-    font-family: 'Copse', serif;
-}
-
-.form-control::-webkit-input-placeholder {
-    color: white;
-}
-
-#MERGE1 {
-    width: 30%;
-    margin-left: 18%;
-    margin-right: 30px;
-}
-
-#MERGE0 {
-    width: 30%;
-}
-
-#comment {
-    margin-left: 20%;
-    width: 60%;
-}
-
-button {
-    margin-left: 20%;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-}
-
-footer {
-    text-align: center;
-    padding-top: 30px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-footer p {
-    margin-top: 10px;
-}
-
-#product,
-#development,
-#design {
-    display: block;
-    font-family: 'Copse', serif;
-    font-size: 16px;
-}
-
-#product .title,
-#development .title,
-#design .title {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-#overlay,
-#overlay2,
-#overlay3,
-#overlay4,
-#overlay5,
-#overlay6,
-#overlay7,
-#overlay8 {
-    display: none;
-    color: black;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.456);
-    position: absolute;
-    top: 20px;
-    left: 35px;
     font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+}
+
+#project-two-title {
     text-align: center;
-    font-size: 30px;
-    padding-top: 50%;
-    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
 }
 
-@media only screen and (max-width: 755px) {
-    #overlay,
-    #overlay2,
-    #overlay3,
-    #overlay4,
-    #overlay5,
-    #overlay6,
-    #overlay7,
-    #overlay8 {
-        width: 100%;
-        height: 100%;
-        top: 20px;
-        left: 16px;
-        padding-top: 20%;
-    }
-    .col-md-3 img {
-        width: 100%px;
-        margin: 20px;
-    }
-    #portfolio {
-        margin-left: 8%;
-        margin-right: 16%;
-    }
-    button {
-        margin-left: 2%;
-        padding-bottom: 10px;
-        margin-bottom: 5px;
-        color: white;
-        background-image: url("../assets/backgrounds/c_image.jpg");
-    }
-#mcontact {
-    height: 60%;
-    background-image: url(../assets/backgrounds/c_image.jpg);
+#project-three-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+}
+
+#project-four-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+}
+
+#project-five-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+}
+
+#project-six-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+}
+
+#project-seven-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+}
+
+#project-eight-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+}
+
+#contact-us-container {
+    background-image: url(../img/backgrounds/c_image.jpg);
+    background-attachment: scroll;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    position: relative;
-    color: white;
-    margin-top: 70px;
-}
-
-.mForm {
-    padding-top: 70px;
-}
-
-form#contact-form::-webkit-input-placeholder {
-    /* Edge */
     color: white;
 }
 
-form#contact-form :-ms-input-placeholder {
-    /* Internet Explorer */
+#contact-form {
+    width: 65%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#user-form-info {
+    padding-bottom: 1rem;
+}
+
+#user-comment-text {
+    padding-bottom: 2rem;
+}
+
+#contact-header {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+ ::placeholder {
     color: white;
 }
 
-form#contact-form ::placeholder {
+#user-name,
+#user-email,
+#user-comments {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 7px;
+}
+
+#button-to-submit {
+    margin-left: 24.5rem;
+    margin-bottom: 2rem;
+    background: transparent;
+    border: 1px solid white;
     color: white;
 }
 
-@media only screen and (max-width: 425px) {
-    #overlay,
-    #overlay2,
-    #overlay3,
-    #overlay4,
-    #overlay5,
-    #overlay6,
-    #overlay7,
-    #overlay8 {
-        width: 100%;
-        height: 100%;
-        top: 20px;
-        left: 16px;
-        padding-top: 20%;
-        font-size: 20px;
-    }
-    .design-image {
-        margin: 10px;
-        padding: 10px;
-    }
-    .col-md-3 img {
-        margin: 0 10px 0 0;
-    }
-    .col-md-4 {
-        width: 30%;
-        margin: 20px;
-    }
-    .container-fluid contact {
-        background-image: url("../assets/backgrounds/c_image.jpg");
-    }
-    #portfolio {
-        margin-left: 8%;
-        margin-right: 16%;
-    }
-    button {
-        padding-bottom: 30px;
-        margin-bottom: 20px;
-    }
-    #MERGE0 {
-        width: 84%;
-        margin-left: 4%;
-        padding-bottom: 10px;
-    }
-    #MERGE1 {
-        width: 100%;
-        margin-left: 4%;
-        margin-bottom: 20px;
-    }
-    #comment {
-        margin-left: 4%;
-        width: 84%;
-    }
+#footer-container {
+    text-align: center;
 }
 
-@media only screen and (min-width: 825px) {
-    #overlay,
-    #overlay2,
-    #overlay3,
-    #overlay4,
-    #overlay5,
-    #overlay6,
-    #overlay7,
-    #overlay8 {
-        width: 100%;
-        height: 100%;
-        top: 20px;
-        left: 20px;
-        padding-top: 30%;
-    }
-    .col-md-4 img {
-        width: 400px;
-        margin: 20px;
-    }
-    #portfolio {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
+#social-media-icons {
+    padding-top: 4rem;
 }
 
-@media only screen and (min-width: 625px) {
-    #overlay,
-    #overlay2,
-    #overlay3,
-    #overlay4,
-    #overlay5,
-    #overlay6,
-    #overlay7,
-    #overlay8 {
-        width: 100%;
-        height: 100%;
-        top: 20px;
-        left: 20px;
-        padding-top: 20%;
-        font-size: 26px;
-    }
-    .col-md-3 img {
-        width: 400px;
-        margin: 20px;
-    }
-    #portfolio {
-        margin-left: 6%;
-        margin-right: 10%;
-    }
-
-    #mcontact {
-    height: 60%;
-    background-image: url(../assets/backgrounds/c_image.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    margin-top: 70px;
+a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
-.mForm {
-    padding-top: 70px;
-}
-
-form#contact-form::-webkit-input-placeholder {
-    /* Edge */
-    color: white;
-}
-
-form#contact-form :-ms-input-placeholder {
-    /* Internet Explorer */
-    color: white;
-}
-
-form#contact-form ::placeholder {
-    color: white;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Copse|Delius+Swash+Caps|Gabriela|Unkempt&display=swap');
-html {
-    scroll-behavior: smooth;
+#delani-footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
