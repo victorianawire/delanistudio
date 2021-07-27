@@ -1,100 +1,151 @@
 $(document).ready(function() {
-    $("#development-image").click(function() {
-        $("#design-image").slideDown('1000').hide('1000');
-        $("#design").show('1000');
-    });
-    $("#development").click(function() {
-        $("#design").slideUp('1000');
-        $("#development-image").slideDown('1500');
-    });
-});
+    //jquery front-end code
 
-$(document).ready(function() {
-    $("#design-image").click(function() {
-        $("#design-image").slideDown('1000').hide('1000');
-        $("#design").show('1000');
-    });
-    $("#design").click(function() {
-        $("#design").slideUp('1000');
-        $("#design-image").slideDown('1000');
-    });
-});
+    //code to control the display of text in-place of the what we do icons
 
-$(document).ready(function() {
-    $("#product-image").click(function() {
-        $("#product-image").slideDown('1000').hide('1000');
-        $("#product").show('1000');
+    //design space
+    $("#design-icon").click(function() {
+        $("#design-icon").hide();
+        $("#design-icon-description").toggle();
+        $("#design-icon-description").show();
     });
-    $("#product").click(function() {
-        $("#product").slideUp('1000');
-        $("#product-image").slideDown('100');
+    $("#design-icon-description").click(function() {
+        $("#design-icon-description").hide();
+        $("#design-icon").toggle();
+        $("#design-icon").show();
     });
-});
+    //development-space
+    $("#development-icon").click(function() {
+        $("#development-icon").hide();
+        $("#development-icon-description").toggle();
+        $("#development-icon-description").show();
+    });
+    $("#development-icon-description").click(function() {
+        $("#development-icon-description").hide();
+        $("#development-icon").toggle();
+        $("#development-icon").show();
+    });
+    //product management stage
+    $("#product-icon").click(function() {
+        $("#product-icon").hide();
+        $("#product-icon-description").toggle();
+        $("#product-icon-description").show();
+    });
+    $("#product-icon-description").click(function() {
+        $("#product-icon-description").hide();
+        $("#product-icon").toggle();
+        $("#product-icon").show();
+    });
 
-$(document).ready(function() {
-    $("#work1").mouseover(function() {
-        $("#overlay").show();
-    }).mouseout(function() {
-        $("#overlay").hide();
-    });
-});
-$(document).ready(function() {
-    $("#work2").mouseover(function() {
-        $("#overlay2").show();
-    }).mouseout(function() {
-        $("#overlay2").hide();
-    });
-});
-$(document).ready(function() {
-    $("#work3").mouseover(function() {
-        $("#overlay3").show();
-    }).mouseout(function() {
-        $("#overlay3").hide();
-    });
-});
-$(document).ready(function() {
-    $("#work4").mouseover(function() {
-        $("#overlay4").show();
-    }).mouseout(function() {
-        $("#overlay4").hide();
-    });
-});
+    //functions to control the display of the project headers on the project images on mouse hoover, in the portfolio section
 
-$(document).ready(function() {
-    $("#work5").mouseover(function() {
-        $("#overlay5").show();
-    }).mouseout(function() {
-        $("#overlay5").hide();
-    });
-    $("#work6").mouseover(function() {
-        $("#overlay6").show();
-    }).mouseout(function() {
-        $("#overlay6").hide();
-    });
-    $("#work7").mouseover(function() {
-        $("#overlay7").show();
-    }).mouseout(function() {
-        $("#overlay7").hide();
-    });
-    $("#work8").mouseover(function() {
-        $("#overlay8").show();
-    }).mouseout(function() {
-        $("#overlay8").hide();
-    });
-});
+    //project one
+    $("#project-one").hover(
+        function() {
+            $("#project-one:Jim Carrey").animate({ opacity: "0.70" }, "slow");
+            $("#project-one-title").toggle("#project-one");
+        },
+        function() {
+            $("#project-one").animate({ opacity: "0.70" }, "slow");
+            $("#project-one-title").toggle("#project-one");
+        }
+    );
+    //project two
+    $("#project-two").hover(
+        function() {
+            $("#project-two").animate({ opacity: "0.70" }, "slow");
+            $("#project-two-title").toggle("#project-two");
+        },
+        function() {
+            $("#project-two").animate({ opacity: "0.70" }, "slow");
+            $("#project-two-title").toggle("#Sample2");
+        }
+    );
+    //project three
+    $("#project-three").hover(
+        function() {
+            $("#project-three").animate({ opacity: "0.70" }, "slow");
+            $("#project-three-title").toggle("#project-three");
+        },
+        function() {
+            $("#project-three").animate({ opacity: "0.70" }, "slow");
+            $("#project-three-title").toggle("#project-three");
+        }
+    );
+    //project four
+    $("#project-four").hover(
+        function() {
+            $("#project-four").animate({ opacity: "0.70" }, "slow");
+            $("#project-four-title").toggle("#project-four");
+        },
+        function() {
+            $("#project-four").animate({ opacity: "0.70" }, "slow");
+            $("#project-four-title").toggle("#project-four");
+        }
+    );
+    //project five
+    $("#project-five").hover(
+        function() {
+            $("#project-five").animate({ opacity: "0.70" }, "slow");
+            $("#project-five-title").toggle("#project-five");
+        },
+        function() {
+            $("#project-five").animate({ opacity: "0.70" }, "slow");
+            $("#project-five-title").toggle("#project-five");
+        }
+    );
+    //project six
+    $("#project-six").hover(
+        function() {
+            $("#project-six").animate({ opacity: "0.70" }, "slow");
+            $("#project-six-title").toggle("#project-six");
+        },
+        function() {
+            $("#project-six").animate({ opacity: "0.70" }, "slow");
+            $("#project-six-title").toggle("#project-six");
+        }
+    );
+    //project seven
+    $("#project-seven").hover(
+        function() {
+            $("#project-seven").animate({ opacity: "0.70" }, "slow");
+            $("#project-seven-title").toggle("#project-seven");
+        },
+        function() {
+            $("#project-seven").animate({ opacity: "0.70" }, "slow");
+            $("#project-seven-title").toggle("#project-seven");
+        }
+    );
+    //project eight
+    $("#project-eight").hover(
+        function() {
+            $("#project-eight").animate({ opacity: "0.70" }, "slow");
+            $("#project-eight-title").toggle("#project-eight");
+        },
+        function() {
+            $("#project-eight").animate({ opacity: "0.70" }, "slow");
+            $("#project-eight-title").toggle("#project-eight");
+        }
+    );
 
-$(document).ready(function() {
-    $("form#form34A").submit(function(event) {
 
-        var name = $("input#MERGE1").val();
-        var email = $("input#MERGE0").val();
-        var message = $("textarea#comment").val();
-        if ($("input#MERGE1").val() && $("input#MERGE0").val()) {
-            alert(name + ", we have received your message. Thank you for reaching out to us.");
+    $("#form-submission").submit(function(event) {
+        var nameOfUser = $("input#user-name").val();
+        var emailOfUser = $("input#user-email").val();
+
+        if (nameOfUser != "" && emailOfUser != "") {
+            alert(
+                "Hello there " +
+                nameOfUser +
+                "! Thank you for contacting us. We will get in touch with using your  your email: " +
+                emailOfUser
+            );
+
+            $("form-submission").reset();
         } else {
-            alert("Please enter your name and email!");
+            alert("Invalid input! Please fill in your name and email address.");
         }
 
+        event.preventDefault();
     });
-
 });
