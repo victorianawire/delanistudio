@@ -283,7 +283,7 @@ footer p {
         margin: 20px;
     }
     .container-fluid contact {
-        background-image: url("assets/backgrounds/c_image.jpg");
+        background-image: url("../assets/backgrounds/c_image.jpg");
     }
     #portfolio {
         margin-left: 8%;
