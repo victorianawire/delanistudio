@@ -122,7 +122,7 @@
 }
 
 .mc_embed_signup {
-    background-image: url("/assets/backgrounds/c_image.jpg");
+    background-image: url("../assets/backgrounds/c_image.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -193,6 +193,14 @@ footer p {
     font-size: 16px;
 }
 
+.design-image,
+.development-image,
+.product-image {
+    height: 10px;
+    width: 10px;
+    ;
+}
+
 #product .title,
 #development .title,
 #design .title {
@@ -251,7 +259,7 @@ footer p {
         padding-bottom: 10px;
         margin-bottom: 5px;
         color: white;
-        background-image: url("/assets/backgrounds/c_image.jpg");
+        background-image: url("../assets/backgrounds/c_image.jpg");
     }
 }
 
@@ -271,9 +279,13 @@ footer p {
         padding-top: 20%;
         font-size: 20px;
     }
+    .img {
+        vertical-align: middle;
+    }
     .design-image {
         margin: 10px;
         padding: 10px;
+        padding-left: 10%;
     }
     .col-md-3 img {
         margin: 0 10px 0 0;
@@ -281,6 +293,8 @@ footer p {
     .col-md-4 {
         width: 30%;
         margin: 20px;
+        image-resolution: 300dpi;
+        object-fit: unset;
     }
     .container-fluid contact {
         background-image: url("assets/backgrounds/c_image.jpg");
